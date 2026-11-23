@@ -13,7 +13,9 @@
   "photos": [
     "/media/photos/1795453289365-PHOTO-2026-09-04-12-09-38.jpg"
   ],
-  "videos": [],
+  "videos": [
+    "/media/videos/1795453953021-1.mp4"
+  ],
   "news": [],
   "teams": []
 }
