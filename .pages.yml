@@ -1,0 +1,82 @@
+media:
+  - name: photos
+    label: Fotoğraflar
+    input: media/photos
+    output: /media/photos
+    categories: [image]
+    rename: safe
+  - name: videos
+    label: Videolar
+    input: media/videos
+    output: /media/videos
+    categories: [video]
+    rename: safe
+
+content:
+  - name: site
+    label: Site Bilgileri
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: club_name
+        label: Kulüp adı
+        type: string
+      - name: slogan
+        label: Slogan
+        type: string
+      - name: hero_title
+        label: Ana sayfa başlığı
+        type: string
+      - name: hero_description
+        label: Ana sayfa açıklaması
+        type: text
+      - name: about_title
+        label: Hakkımızda başlığı
+        type: string
+      - name: about_text
+        label: Hakkımızda metni
+        type: text
+      - name: phone
+        label: Telefon
+        type: string
+      - name: address
+        label: Adres
+        type: text
+      - name: instagram_url
+        label: Instagram bağlantısı
+        type: string
+      - name: google_maps_url
+        label: Google Haritalar bağlantısı
+        type: string
+      - name: google_reviews_url
+        label: Google yorumları bağlantısı
+        type: string
+      - name: photos
+        label: Fotoğraf galerisi
+        type: image
+        list: true
+      - name: videos
+        label: Video galerisi
+        type: file
+        list: true
+      - name: news
+        label: Haberler
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            label: Haber başlığı
+            type: string
+          - name: date
+            label: Tarih
+            type: string
+          - name: description
+            label: Açıklama
+            type: text
+          - name: image
+            label: Haber fotoğrafı
+            type: image
