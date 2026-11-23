@@ -1,0 +1,24 @@
+ANTALYA KARIYER VOLEYBOL S.K. - SITE PAKETI
+
+GitHub deposunun main dalina su dosyalari/klasorleri yukleyin:
+- index.html (mevcut dosyanin yerine)
+- yonetim.html
+- content/site.json
+- media/photos/ (bos klasor; GitHub web arayuzunde bos klasor gorunmez)
+- media/videos/ (bos klasor; panel yukleme sirasinda olusturur)
+
+Yonetim paneli:
+https://antalyakariyervoleybol.com.tr/yonetim.html
+
+Panel girisi icin GitHub Fine-grained personal access token gerekir.
+Token ayarlari:
+- Only select repositories: armeksuaritma/antalya-kariyer-voleybol
+- Repository permissions -> Contents: Read and write
+- Metadata: Read-only (otomatik)
+Token'i HTML dosyasina yazmayin veya kimseyle paylasmayin. Panel token'i sadece acik tarayici oturumunda bellekte tutar.
+
+Notlar:
+- GitHub Pages statik barindirmadir; yonetim paneli dosyalari GitHub Contents API ile kaydeder.
+- Panelin medya yukleme limiti dosya basina 20 MB'dir.
+- Video dosyalarinin cok buyuk olmasi GitHub deposunu agirlastirir. Buyuk videolar icin YouTube/harici video baglantisi tercih edin.
+- GitHub token'i olustururken sadece bu depoya erisim verin.
